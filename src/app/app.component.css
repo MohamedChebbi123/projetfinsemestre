@@ -1,0 +1,47 @@
+.custom-toolbar {
+    display: flex;
+    align-items: center;
+    background-color: #ff7e67; /* Soft coral background for toolbar */
+    color: #fff;
+    padding: 0 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .custom-toolbar .spacer {
+    flex-grow: 1;
+  }
+  
+  .custom-toolbar button {
+    margin: 0 12px; /* Add spacing between buttons */
+    color: #fff;
+    font-size: 1rem;
+    text-transform: capitalize; /* Make button labels sentence-case */
+  }
+  
+  .custom-toolbar button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+    border-radius: 4px;
+  }
+  
+  .custom-toolbar span:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-toolbar {
+      flex-wrap: wrap; /* Make toolbar items wrap on smaller screens */
+      justify-content: center;
+    }
+  
+    .custom-toolbar button {
+      margin: 8px;
+    }
+  
+    .custom-toolbar span:first-child {
+      margin-bottom: 8px;
+    }
+  }
+  

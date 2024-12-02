@@ -1,0 +1,20 @@
+<div class="pannier-container">
+    <h2>votre pannier</h2>
+    <div *ngIf="pannier_elements.length > 0; else noItems">
+      <div class="cart-item" *ngFor="let item of pannier_elements">
+        <mat-card class="cart-item-card">
+          <mat-card-header>
+            <mat-card-title>{{ item.nom }}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image [src]="item.imageurl" alt="{{ item.nom }}">
+          <mat-card-content>
+            <p>Price: {{ item.prix }} TND</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <ng-template #noItems>
+      <p>aucune item dans votre pannier</p>
+    </ng-template>
+      <button mat-raised-button color="primary">payer</button>
+    </div>

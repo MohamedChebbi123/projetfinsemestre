@@ -1,0 +1,103 @@
+.produit-container {
+  padding: 20px;
+  background-color: #eaf7ff; 
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  margin: 16px auto;
+  max-width: 1200px;
+  border: 1px solid #cde7f5; 
+}
+
+.produit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.produit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #ffffff, #f8faff); 
+  border: 1px solid #d6e9f8; 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produit-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.produit-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid #cde7f5; 
+}
+
+.produit-card .card-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.produit-card .card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2d3748; 
+  margin: 0;
+}
+
+.produit-card .card-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00a19d;
+  margin: 0;
+}
+
+.produit-card .card-actions {
+  margin-top: auto;
+  padding: 12px;
+  background-color: #e9f5ff; 
+  text-align: center;
+  border-top: 1px solid #cde7f5;
+}
+
+.produit-card .card-actions button {
+  background: linear-gradient(135deg, #ff7e67, #ffba61); 
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.produit-card .card-actions button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #ff6347, #ffa858); 
+}
+
+@media (max-width: 768px) {
+  .produit-container {
+    padding: 16px;
+  }
+
+  .produit-grid {
+    gap: 14px;
+  }
+
+  .produit-card .card-title {
+    font-size: 1.1rem;
+  }
+
+  .produit-card .card-price {
+    font-size: 1rem;
+  }
+}

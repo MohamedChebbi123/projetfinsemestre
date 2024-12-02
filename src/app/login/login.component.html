@@ -1,0 +1,31 @@
+<div class="main-container">
+  <div class="form-container">
+    <h2>Login</h2>
+    <form>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput id="email" [(ngModel)]="email" name="email" type="email" />
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Mot de Passe</mat-label>
+        <input matInput id="mot_de_passe" [(ngModel)]="mot_de_passe" name="mot_de_passe" type="password" />
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="button" (click)="login()">Login</button>
+    </form>
+    <div class="message">{{ message }}</div>
+  </div>
+  <div class="form-container">
+    <h2>Sign In</h2>
+    <form>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput id="email_signin" [(ngModel)]="email_signin" name="email_signin" type="email" />
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Mot de Passe</mat-label>
+        <input matInput id="mot_de_passe_signin" [(ngModel)]="mot_de_passe_signin" name="mot_de_passe_signin" type="password" />
+      </mat-form-field>
+      <button mat-raised-button color="accent" type="button" (click)="signin()">Sign In</button>
+    </form>
+  </div>
+</div>

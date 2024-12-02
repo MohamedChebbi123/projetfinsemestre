@@ -1,0 +1,91 @@
+.about-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+  }
+  
+  .about-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 16px;
+  }
+  
+  .about-card mat-card-title {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .about-card mat-card-subtitle {
+    color: #2d9cdb; 
+    font-size: 1.1rem;
+  }
+  
+  .about-card ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+  }
+  
+  .about-card ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .team-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 16px;
+  }
+  
+  .team-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .team-member {
+    width: 150px;
+    text-align: center;
+    background-color: #f0f4f8;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member mat-card-header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .team-member mat-card-header mat-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .team-member mat-card-header mat-card-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  mat-divider {
+    background-color: #ff6f61;
+    height: 2px;
+    margin: 20px 0;
+    border-radius: 4px;
+  }
+  

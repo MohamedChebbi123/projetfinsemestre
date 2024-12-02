@@ -1,0 +1,29 @@
+<div class="carte-banquaire-form">
+    <h2>Carte Bancaire</h2>
+    <form (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill" class="full-name-field">
+        <mat-label>nom et prenom</mat-label>
+        <input matInput [(ngModel)]="fullName" name="fullName" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="location-field">
+        <mat-label>location</mat-label>
+        <input matInput [(ngModel)]="location" name="location" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill" class="amount-field">
+        <mat-label>montant</mat-label>
+        <input matInput type="number" [(ngModel)]="amount" name="amount" required />
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit">remplir</button>
+    </form>
+  
+    <div *ngIf="fullName && location && amount !== null">
+      
+      <p>nom et prenom: {{ fullName }}</p>
+      <p>Location: {{ location }}</p>
+      <p>montant: {{ amount }}</p>
+    </div>
+  </div>
+  
